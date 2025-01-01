@@ -1,0 +1,121 @@
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage{cmbright}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage[sf]{libertine}
+\usepackage{microtype}
+\usepackage{paracol}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\hypersetup{colorlinks, urlcolor=black, linkcolor=black}
+
+% Custom Commands
+
+% Geometry
+\geometry{hmargin=1.75cm, vmargin=2.5cm}
+\columnratio{0.65, 0.35}
+\setlength\columnsep{0.05\textwidth}
+\setlength\parindent{0pt}
+\setlength{\smallskipamount}{8pt plus 3pt minus 3pt}
+\setlength{\medskipamount}{16pt plus 6pt minus 6pt}
+\setlength{\bigskipamount}{24pt plus 8pt minus 8pt}
+
+% Style
+\pagestyle{empty}
+\titleformat{\section}{\scshape\LARGE\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{\bigskipamount}{\smallskipamount}
+\newcommand{\heading}[2]{\centering{\sffamily\Huge #1}\\\smallskip{\large{#2}}}
+\newcommand{\entry}[4]{{{\textbf{#1}}} \hfill #3 \\ #2 \hfill #4}
+\newcommand{\tableentry}[3]{\textsc{#1} & #2\expandafter\ifstrequal\expandafter{#3}{}{\\}{\\[6pt]}}
+
+\begin{document}
+
+
+\begin{paracol}{2}
+
+% Name & headline
+\heading{Arnab Dhar}
+\switchcolumn
+
+% Contact
+\begin{itemize}[itemsep=1pt,label={}]
+  \item (+91) 9163279081
+  \item arnabhar32@gmail.com
+\end{itemize}
+
+\switchcolumn*
+
+
+% START: Experience Block
+
+\section{experience}
+
+% COMPANY: Pitangent
+\entry{\href{https://in.linkedin.com/company/pitangent}{Pitangent Analytics \& Technology Solutions}}{\emph{Data Scientist}}{Kolkata}{\emph{Jun, 2023 - Present}}
+\begin{itemize}
+    \item Trained and Deployed more than 10 AI models like BERT, Llama and Mistral on AWS with End-to-End System Monitoring.
+    \item Deployed Chatbots powered by OpenAI, Anthropic, Amazon Bedrock with LLM monitoring.
+    \item Performed R\&D on cuting edge AI technologies for the organization. 
+\end{itemize}
+
+% COMPANY: Pitangent
+
+\medskip
+
+% COMPANY: Vitwo
+\entry{\href{https://www.linkedin.com/company/vitwo}{ViTWO}}{\emph{Associate Data Scientist}}{Kolkata}{\emph{Nov, 2021 - Jun, 2023}}
+\begin{itemize}
+  \item Developed Cloud data pipelines that connect multiple databases like MySQL and MongoDB between backend applications and analytical dashboards.
+  \item Finetuned several computer vision models including YOLOv8, TrOCR and LayoutLM.
+  \item Worked on Cloud Providers like Microsoft Azure, Amazon Web Services and Digital Ocean.
+\end{itemize}
+
+% COMPANY: Vitwo
+
+% END: Experience Block
+
+\switchcolumn
+
+% START: Skills
+\section{skills}
+\begin{itemize}[itemsep=1pt,label={\faCode}]
+  \item Python
+  \item Pytorch
+  \item AutoML
+  \item LangChain
+  \item Docker
+  \item AWS
+  \item Azure
+\end{itemize}
+
+% END: Skills
+
+% START: Education
+\switchcolumn
+\section{education}
+
+\entry{\href{https://www.bhu.ac.in/Site/Home/1_2_16_Main-Site}{Banaras Hindu University}}{\emph{M. Sc. Statistics}}{Varanasi}{\emph{2018 - 2020}}
+
+\medskip
+
+\entry{\href{https://caluniv.ac.in/}{University of Calcutta}}{B. Sc. (Hons) Statistics}{Kolkata}{2015 - 2018}
+% END: Education
+
+% START: Public Links
+\switchcolumn
+\section{public links}
+
+\begin{itemize}[itemsep=1pt]
+  \item[\faLinkedin] \href{https://www.linkedin.com/in/arnab-dhar}{/arnab-dhar}
+  \item[\faGithub] \href{https://www.github.com/arnabd64}{/arnabd64} 
+  \item[\faLink] \href{https://hf.co/arnabdhar}{Huggingface} 
+\end{itemize}
+% END: Public Links
+
+
+\end{paracol}
+\end{document}
