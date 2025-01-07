@@ -16,8 +16,8 @@
 % Custom Commands
 
 % Geometry
-\geometry{hmargin=1.75cm, vmargin=2.5cm}
-\columnratio{0.65, 0.35}
+\geometry{hmargin=1.5cm, vmargin=1cm}
+\columnratio{0.7, 0.3}
 \setlength\columnsep{0.05\textwidth}
 \setlength\parindent{0pt}
 \setlength{\smallskipamount}{8pt plus 3pt minus 3pt}
@@ -57,9 +57,9 @@
 % COMPANY: Pitangent
 \entry{\href{https://in.linkedin.com/company/pitangent}{Pitangent Analytics \& Technology Solutions}}{\emph{Data Scientist}}{Kolkata}{\emph{Jun, 2023 - Present}}
 \begin{itemize}
-    \item Trained Natural Language models \& Generative models like BERT, Llama and Mistral on AWS Sagemaker for applications like Sentiment Analysis, Chatbots \& RAG.
-    \item Deployed Chatbots powered by OpenAI, Anthropic, Amazon Bedrock with LLM monitoring tools like LangSmith, OpenTelemetry \& Grafana.
-    \item Performed R\&D on cuting edge AI technologies for the organization. 
+    \item Trained NLP and generative models like BERT, Llama, and Mistral on AWS Sagemaker for sentiment analysis, chatbots, and RAG applications.
+    \item Deployed chatbots using OpenAI, Anthropic, and Amazon Bedrock with LLM monitoring via LangSmith, OpenTelemetry, and Grafana.
+    \item Conducted R\&D for clients on image generation, LLM quantization, and resource-efficient LLM training.
 \end{itemize}
 
 % COMPANY: Pitangent
@@ -69,9 +69,8 @@
 % COMPANY: Vitwo
 \entry{\href{https://www.linkedin.com/company/vitwo}{ViTWO}}{\emph{Associate Data Scientist}}{Kolkata}{\emph{Nov, 2021 - Jun, 2023}}
 \begin{itemize}
-  \item Developed data pipelines on Azure Data Factory connecting MySQL and MongoDB databases with backend applications and PowerBI dashboard.
-  \item Trained \& Deployed Computer Vision and Document Extraction models like YOLOv8, TrOCR and LayoutLM.
-  \item Worked on Cloud Providers like Microsoft Azure, Amazon Web Services and Digital Ocean.
+  \item Developed ETL pipelines in Azure Data Factory to connect MySQL and MongoDB with backend applications and PowerBI.
+  \item Trained and deployed computer vision and document extraction models, including YOLOv8, TrOCR, and LayoutLM.
 \end{itemize}
 
 % COMPANY: Vitwo
@@ -95,19 +94,42 @@
 
 % END: Skills
 
+% START: Projects
+\switchcolumn
+
+\section{projects}
+
+\entry{HR Chatbot}{Simplified Communications with HRD}{\emph{LangChain, Huggingface, Docker}}{2023-2024}
+\begin{itemize}
+  \item Trained Llama2 model to answer common HR related queries for both Employees and HR people.
+  \item Integrated OpenAI's function calling for advanced tasks like leave requests and reimbursements.
+\end{itemize}
+
+\entry{vitwo.ai}{ERP driven by AI}{\emph{Python, Azure, PyTorch}}{2021 - 2023}
+\begin{itemize}
+  \item Product Page: \href{https://vitwo.ai}{https://vitwo.ai}
+  \item Developed seamless ETL pipelines on Azure Datafactory improving efficiency of development cycles.
+  \item Developed a document extraction system to automate data extraction from sales invoices, credit notes, and purchase bills.
+\end{itemize}
+% END: Projects
+
+
+
 % START: Education
 \switchcolumn
+\begin{flushleft}
 \section{education}
 
-\entry{\href{https://www.bhu.ac.in/Site/Home/1_2_16_Main-Site}{Banaras Hindu University}}{\emph{M. Sc. Statistics}}{Varanasi}{\emph{2018 - 2020}}
-
+\entry{\href{https://www.bhu.ac.in/Site/Home/1_2_16_Main-Site}{Banaras Hindu University}}{\emph{M. Sc. Statistics}}{}{2018 - 2020}
 \medskip
 
-\entry{\href{https://caluniv.ac.in/}{University of Calcutta}}{B. Sc. (Hons) Statistics}{Kolkata}{2015 - 2018}
+\entry{\href{https://caluniv.ac.in/}{University of Calcutta}}{\emph{B. Sc. (Hons) Statistics}}{}{2015 - 2018}
+
+\end{flushleft}
 % END: Education
 
 % START: Public Links
-\switchcolumn
+% \switchcolumn
 \section{public links}
 
 \begin{itemize}[itemsep=1pt]
@@ -115,8 +137,8 @@
   \item[\faGithub] \href{https://www.github.com/arnabd64}{/arnabd64} 
   \item[\faLink] \href{https://hf.co/arnabdhar}{Huggingface} 
 \end{itemize}
-% END: Public Links
 
+% END: Public Links
 
 \end{paracol}
 \end{document}
